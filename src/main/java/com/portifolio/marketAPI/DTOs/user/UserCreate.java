@@ -1,5 +1,6 @@
 package com.portifolio.marketAPI.DTOs.user;
 
+import com.portifolio.marketAPI.entity.enums.UserRole;
 import jakarta.validation.constraints.NotBlank;
 
 public record UserCreate(
@@ -10,6 +11,8 @@ public record UserCreate(
         String password1,
 
         @NotBlank(message = "senha de acesso para o colaborador deve ser informada")
-        String password2
+        String password2,
+
+        UserRole userRole
 ) {
 }
