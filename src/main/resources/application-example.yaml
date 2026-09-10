@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://apth/db
+    username: postgresUser
+    password: passwordUser
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: secret-token
+  expiration: 3600000
